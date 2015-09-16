@@ -25,39 +25,64 @@
 <title>Pannotator, the awesome image annotator</title>
 </head>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        	<div class="navbar-header">
-			<a class="navbar-brand" href="#">Pannotator</a>
-			<span class="btn btn-default btn-file rowcol">
-			Browse <input type="file">
-			</span>
-			<span id="showResults" class="btn btn-default rowcol">
-		Show Images</span>
-		<div class=" col-md-1 pull-right rowcol">
-			<div class="input-group">
-				  <input id="page" type="text" placeholder="Page" value="1" class="form-control">
-			</div>
-		</div>
-		<div class=" col-md-3 pull-right rowcol">
-			<div class="input-group">
-				  <input id="rows" type="text" placeholder="Rows" class="form-control">
-				  <span class="input-group-addon">X</span>
-				  <input id="cols" type="text" class="form-control" placeholder="Cols" >
-			</div>
-		</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Pannotator</a>
+                <div class="navbar-header">
+                <span class="btn btn-default btn-file rowcol">
+                    Browse <input type="file" tabindex="1">
+                </span>
+                    </div>
 
-		<div class=" col-md-3 pull-right rowcol">
+                <div class="rowcal navbar-header" style="margin-left: 3px">
+                <span id="showResults" class="btn btn-default rowcol" tabindex="7">
+                    Refresh
+                </span>
+                <span id="save" class="btn btn-default rowcol" tabindex="7">
+                    Save
+                </span>
 
-			<div class="input-group">
-				  <input id="width" type="text" placeholder="Width" class="form-control" >
-				  <span class="input-group-addon">X</span>
-				  <input id="height" type="text" class="form-control" placeholder="Height" >
-			</div>
-		</div>
-	</div>
-      </div>
-    </nav>
+                    </div>
+                <div class=" col-md-2  rowcol">
+                    <div class="input-group">
+                          <input id="rows" type="text" placeholder="Rows" class="form-control" tabindex="5">
+                          <span class="input-group-addon">X</span>
+                          <input id="cols" type="text" class="form-control" placeholder="Cols" tabindex="6">
+                    </div>
+                </div>
+
+                <div class=" col-md-3  rowcol">
+
+                    <div class="input-group">
+                          <input id="width" type="text" placeholder="Width" class="form-control" tabindex="3">
+                          <span class="input-group-addon">X</span>
+                          <input id="height" type="text" class="form-control" placeholder="Height" tabindex="4">
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 page input-group" style="margin-top:5px;">
+                            <span class="input-group-btn">
+                              <button id="prevpage" class="btn btn-default" type="button">
+                                 <<
+                              </button>
+                           </span>
+                              <input id="page" type="text" placeholder="Page" class="form-control">
+                               <span id="totalpages" class="input-group-addon"></span>
+
+                             <span class="input-group-btn">
+                              <button id="nextpage" class="btn btn-default" type="button">
+                                 >>
+                              </button>
+                           </span>
+
+                </div>
+
+
+            </div>
+  </div>
+</nav>
 <body>
 
 <div id="main" class="container">

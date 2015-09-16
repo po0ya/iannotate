@@ -1,9 +1,35 @@
 .rowcol{
-	margin-top:5px;
+	margin-top:5px !important;
 }
 
 .rowcal:span{
 	height:95%;
+}
+.imgstable{
+    margin-top:50px;
+}
+
+td.imgcell {
+    border: 2px;
+    border-style: double;
+    border-color: white;
+}
+td.val1{
+    background-color: chartreuse;
+}
+
+td.val0{
+    background-color: crimson;
+}
+
+img.myimg{
+    max-width: 100px;
+    max-height: 100px;
+    margin:5px;
+}
+
+.page{
+    width: 170px;
 }
 
 .btn-file {
