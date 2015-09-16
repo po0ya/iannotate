@@ -4,7 +4,8 @@ This is a simple toolbox for annotating image datasets with binary labels and ar
 # How-to
 
 Just clone the repository and open index.html in either Firefox or Chrome.
-
+## Browse
+Browse the .csv input file.
 ###Format of .csv filepath label map file
   ```
   classlabel0,classlabel0
@@ -15,6 +16,9 @@ Just clone the repository and open index.html in either Firefox or Chrome.
   filepathN,classlabel0/1
   ```
 ##
+
+## Refresh
+When you change image width/height or number of rows and cols to be displayed or page number, hit on refresh.
 
 ## Save
 Save button will create a .csv file with the same format as input and save it.
