@@ -21,7 +21,6 @@ function saveTextAsFile()
 		// Firefox requires the link to be added to the DOM
 		// before it can be clicked.
 		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-		downloadLink.onclick = destroyClickedElement;
 		downloadLink.style.display = "none";
 		document.body.appendChild(downloadLink);
 	}
@@ -82,10 +81,10 @@ $(document).ready( function() {
                     continue;
                 numImgs++;
                 filepaths[line - 1] = lineitems[0];
-                values[line - 1] = '0';
+                values[line - 1] = 0;
                 if (lineitems.length > 1) {
                     if (lineitems[1] === classes[1])
-                        values[line - 1] = '1';
+                        values[line - 1] = 1;
                 }
             }
 			$('#showResults').show();
