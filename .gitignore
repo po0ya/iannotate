@@ -73,3 +73,6 @@ local.properties
 
 #temp files
 *~
+
+#pycharm
+.idea
