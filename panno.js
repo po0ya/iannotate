@@ -173,11 +173,12 @@ $(document).ready( function() {
 });
 
 function setTD(){
-    $('td.imgcell').click(function(){
-        h=$(this).find(':hidden')[0];
-        $(this).toggleClass('val'+values[h.value]);
+    $('.myimg').click(function(){
+        par = $(this).parent();
+        h=par.find(':hidden')[0];
+        par.toggleClass('val'+values[h.value]);
         values[h.value] = values[h.value]===0?1:0;
-        $(this).toggleClass('val'+values[h.value]);
+        par.toggleClass('val'+values[h.value]);
     });
 }
 
